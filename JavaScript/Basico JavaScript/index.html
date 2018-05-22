@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cadastro Clentes - Nutricionista </title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="image/favicon.ico" / <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 id="title">Nutricionista - Cadastro Clientes </h1>
+    <div class="container">
+        <h2 id="subtitle">Adicione os dados do seu cliente</h2>
+        <hr class="line">
+        <form id="form-adiciona" onsubmit="return validaDados();">
+            <div class="form-group">
+                <label for="nomePaciente">Nome do Paciente</label>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome do Paciente" autofocus>
+            </div>
+            <div class="form-row">
+
+                <div class="form-group col-md-6">
+                    <label for="pesoPaciente">Peso do Paciente</label>
+                    <input type="text" class="form-control" id="peso" name="peso" placeholder="Peso do Paciente">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="alturaPaciente">Altura</label>
+                    <input type="text" class="form-control" id="altura" name="altura" placeholder="Altura do Paciente">
+                </div>
+
+            </div>
+
+            <div class="button_holder">
+                <button type="submit" class="btn btn-primary" id="btnCadastro">Cadastrar</button>
+                <button type="submit" class="btn btn-primary" id="btnAdiciona">Adicionar Pacientes</button>
+            </div>
+
+
+        </form>
+
+        <hr class="line">
+
+
+        <h3 id="title-table">Meus Pacientes</h3>
+        <div class="form-group">
+                <label for="pesquisaPaciente">Campo de Pesquisa</label>
+                <input type="text" class="form-control" id="pesquisa" name="pesquisa" placeholder="Pesquise um Paciente" autofocus>
+            </div>
+        <table id="table-paciente">
+            <thead>
+                <tr id="table-title">
+                    <th>Nome</th>
+                    <th>Peso(kg)</th>
+                    <th>Altura(m)</th>
+                    <th>IMC</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-paciente">
+                <tr class="paciente">
+                    <td class="info-nome">Paulo</td>
+                    <td class="info-peso">100</td>
+                    <td class="info-altura">2.00</td>
+                    <td class="info-imc">0</td>
+                </tr>
+
+                <tr class="paciente" >
+                    <td class="info-nome">João</td>
+                    <td class="info-peso">80</td>
+                    <td class="info-altura">1.72</td>
+                    <td class="info-imc">0</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/calculoIMC.js"></script>
+    <script src="js/removerItem.js"></script>
+    <script src="js/pesquisa.js"></script>
+    <script src="js/buscarPaciente.js"></script>
+</body>
+
+</html>
