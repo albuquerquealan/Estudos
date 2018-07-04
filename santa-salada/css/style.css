@@ -1,0 +1,49 @@
+body {
+    margin:0;
+    padding:0;
+    color:#000;
+    background:#fff;
+}
+#geral {
+    width:100%;
+    height: 100%;
+    margin:0 auto;
+    background:#ddd;
+}
+#cabecalho {
+    padding:10px;
+    background:#fdd;
+}
+#conteudo-1 {
+   float:left;
+   width:33%;
+   margin-top: 10px;
+   background:#bfb;
+   height: 100%;
+}
+#conteudo-2 {
+    float:right;
+    width:66%;
+    height: 100%;
+    margin-top: 10px;
+}
+#conteudo-2-1 {
+    float:left;
+    width:49%;
+    height: 100%;
+    
+    background:#ddf;
+    
+}
+#conteudo-2-2 {
+    float:right;
+    height: 100%;
+    width:49%;
+    
+    background:#dff;
+}
+#rodape {
+    clear:both;
+    padding:5px;
+    background:#ff9;
+}
