@@ -5,6 +5,7 @@ class NegociacaoController {
     this._inputQuantidade = $('#quantidade'); //evita que percorra o DOM em toda requisição
     this._inputValor = $('#valor');
     this._listaNegociacoes = new ListaNegociacoes();
+    this._negociacoesView = new NegociacoesView();
 
   }
   adiciona(event) {
@@ -14,7 +15,7 @@ class NegociacaoController {
 
     this._limpaformulário();
 
-    console.log(this._listaNegociacoes.negociacoes);
+    
 
   }
 
