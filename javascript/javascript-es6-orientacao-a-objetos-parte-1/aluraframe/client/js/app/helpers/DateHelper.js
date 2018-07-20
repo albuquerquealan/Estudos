@@ -1,13 +1,14 @@
 class DateHelper {
 
-    constructor() {
+    constructor() { //evita que a classe possa ser instanciada, pois é "abstrata"
         throw new Error('Esta classe não pode ser instanciada !!!!');
     }
 
     static texToDate(text) {
         
         //expressão regular d de qualquer digito de tamanho 4 com traço como separador.
-        if (!/\d{4}-\d{2}-\d{2}/.test(text))
+        //O ˆ indica "começando com " e o $ "terminando com".
+        if (!/^\d{4}-\d{2}-\d{2}$/.test(text))
             throw new Error('Deve estar no formato aaaa-mm-dd');
         
         // apenas uma instrução, não precisa por return, faz implícito. 
