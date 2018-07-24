@@ -1,10 +1,11 @@
 class NegociacoesView {
-    
+
     constructor(elemento) {
 
         this._elemento = elemento;
     }
-    _template() { //template string
+
+    _template(model) { //template string
         return `<table class="table table-hover table-bordered"> 
                 <thead>
                         <tr>
@@ -16,15 +17,23 @@ class NegociacoesView {
                     </thead>
                     
                     <tbody>
+                    ${model.negociacoes.map(n => `
+                          <tr>
+                              <td>${DateHelper.DateToTex(n.data)}</td>
+                              <td>${n.quantidade}</td>
+                              <td>${n.valor}</td>
+                              <td>${n.volume}</td>
+                          </tr>
+                        `).join('')}
                     </tbody>
                     
                     <tfoot>
                     </tfoot>
                 </table> `;
     }
-    update(){
-        this._elemento.innerHTML = this._template(); //função innerhtml converte a string de retorno
-                                                    // em elementos do dom se a marcação estiver correta   
+    update(model) {
+        this._elemento.innerHTML = this._template(model); //função innerhtml converte a string de retorno
+        // em elementos do dom se a marcação estiver correta   
     }
 
 
