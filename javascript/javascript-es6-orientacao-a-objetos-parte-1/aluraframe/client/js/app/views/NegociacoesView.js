@@ -4,8 +4,8 @@ class NegociacoesView {
 
         this._elemento = elemento;
     }
-    template() {
-        return `<table class="table table-hover table-bordered">
+    _template() { //template string
+        return `<table class="table table-hover table-bordered"> 
                 <thead>
                         <tr>
                             <th>DATA</th>
@@ -21,6 +21,10 @@ class NegociacoesView {
                     <tfoot>
                     </tfoot>
                 </table> `;
+    }
+    update(){
+        this._elemento.innerHTML = this._template(); //função innerhtml converte a string de retorno
+                                                    // em elementos do dom se a marcação estiver correta   
     }
 
 
