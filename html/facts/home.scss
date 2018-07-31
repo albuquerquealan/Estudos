@@ -1,0 +1,21 @@
+//--------- Start Facts Area -------------//
+
+.facts-area{
+	background-color:$primary-color;
+}
+
+.single-fact{
+	h1{
+		font-weight:700;
+		font-size:48px;
+	}
+	p{
+		color:$black;
+	}
+	@media(max-width:800px){
+		margin-bottom:30px;
+	}
+}
+
+
+//--------- End Facts Area -------------//
