@@ -1,10 +1,30 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import {loadGenres} from './Api';
+import api from './Api';
 class App extends Component {
+  constructor(props){
+    super(props)
+    this.state ={
+      genres:[], 
+      isLoading: false
+    }
+  }
+
   componentDidMount(){
-    axios.get('http://localhost:3001/genres')
-    .then((res)=> console.log(res))
+    this.setState({
+      isLoading: true //defino que estou carregando os dados
+    })
+    api.loadGenres().then((res)=>{ //carrego a api. Como é assincrono o then só acontecem quando 
+      this.setState({  //os dados terminam de ser carregados 
+        isLoading: false,
+        genres: res.data
+      })
+    })
+  }
+  renderGenreLink(genre){
+    return (
+      <span>&nbsp;  <a href="">{genre}</a>&nbsp;</span>
+    )
   }
   render() {
     return (
@@ -39,7 +59,19 @@ class App extends Component {
             </div>
           </div>
         </section>
-
+        <section>
+          { //usa chaves pra falar que usa js puro 
+            this.state.isLoading &&
+            <span>Aguarde, carregando ...</span>
+          }
+          {
+            !this.state.isLoading &&
+            <div>
+                Ver séries do gênero: 
+               {(this.state.genres.map(this.renderGenreLink))}
+            </div>
+          }
+        </section>
         
       </div>
     );
