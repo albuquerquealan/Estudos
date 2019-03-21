@@ -8,8 +8,8 @@ Segue um índice para navegação.
 
 ## Índice
 
-1. [Material em Português](#material-portugues)
-2. [Material em Inglês](#material-ingles)
+1. [Material em Português](#material-em-português)
+2. [Material em Inglês](#material-em-inglês)
 ***
 
 ## Material em Português
