@@ -1,7 +1,6 @@
 # Meus Links para montar material sobre Spring Cloud
 
-Olá pessoas, neste repositório estão organizados os principais links para vários serviços, componenetes e ferramentas relacionadas ao desenvolvimento web.
-
+Olá pessoas, neste repositório estão organizados os principais links para montar o material relacionado a Spring Cloud
 Segue um índice para navegação.
 
 ***
