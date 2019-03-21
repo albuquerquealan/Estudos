@@ -1,13 +1,37 @@
-# Links para material
-**Blog em portugues de introdução Spring Cloud**
- - [Configurações distribuídas com Spring CloudConfig](https://emmanuelneri.com.br/2018/07/09/configuracoes-distribuidas-com-spring-cloud-config/)
- - [Profiles no Spring boot](https://emmanuelneri.com.br/2017/05/14/profiles-no-spring-boot/)
- -    [Código para configuração do Spring Cloud  ](https://github.com/emmanuelneri-blog/spring-cloud-config) 
-   **Tutorial simples de integração**
-  [A microservice Architecture with Spring boot and Spring
-   Cloud](https://s3.amazonaws.com/baeldung.com/A+Microservice+Architecture+with+Spring+Boot+and+Spring+Cloud.pdf?__s=dzvgovpq1bf4jpssmezf)
-**Documentação Oficial**
-   [Documentação oficial](https://spring.io/projects/spring-cloud)
-   **Links Aleatórios**
-   [Baeldung introdução Springcloud](https://www.baeldung.com/spring-cloud-tutorial) 
-   [Configuração de Servidor](https://cloud.spring.io/spring-cloud-config/multi/multi__spring_cloud_config_server.html)
+# Meus Links para montar material sobre Spring Cloud
+
+Olá pessoas, neste repositório estão organizados os principais links para vários serviços, componenetes e ferramentas relacionadas ao desenvolvimento web.
+
+Segue um índice para navegação.
+
+***
+
+## Índice
+
+1. [Material em Português](#material-portugues)
+2. [Material em Inglês](#material-ingles)
+***
+
+## Material em Português
+
+Links 
+
+| Link                                 | Descrição                                  			|
+|--------------------------------------|--------------------------------------------------------|
+| https://bit.ly/2HJIu0x			   | Configurações distribuídas com Spring CloudConfig      |
+| https://bit.ly/2ul67og			   | Profiles no Spring boot								|
+| https://bit.ly/2UJUqCV			   | Código para configuração do Spring Cloud				|
+
+
+***
+
+## Material em Inglês
+Links 
+
+| Link                                 				| Descrição                                  							  |	
+|---------------------------------------------------|-------------------------------------------------------------------------|
+| https://bit.ly/2TU6BjJ			   				| Links A microservice Architecture with Spring boot and Spring Cloud     |
+| https://spring.io/projects/spring-cloud			| Documentação oficial												      |
+| https://www.baeldung.com/spring-cloud-tutorial	| Baeldung introdução Springcloud										  |
+| https://bit.ly/2OgL0ww							| Configuração de Servidor												  |
+
